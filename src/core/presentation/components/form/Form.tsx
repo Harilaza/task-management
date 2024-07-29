@@ -48,9 +48,8 @@ export  const Form : React.FC = ({
                     )}
                     <form onSubmit={handleSubmit(submitAction)}>
                         {properties && properties.map((property: IInputFormProps, index: number) => (
-                            <div>
+                            <div key={index}>
                                 <Input
-                                    key={index}
                                     id={property.id}
                                     name={property.name}
                                     label={property.label}

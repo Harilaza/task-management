@@ -1,10 +1,12 @@
 import React from 'react';
-import {Input} from "../components/input/Input.tsx";
+import {Outlet} from "react-router-dom";
+import {Navbar} from "../../../shared/navbar";
 
 export const PublicLayout = () => {
     return (
         <>
-            <h1>Je suis le layout</h1>
+            <Navbar />
+            <Outlet />
         </>
     );
 };
